@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u7M-1a-xSJ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Repositories-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="The_Repo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZcZ-ul-uZU">
+                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RepoCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepoCell" rowHeight="120" id="cKa-xx-MJL" customClass="RepoTableViewCell" customModule="The_Repo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cKa-xx-MJL" id="Vtw-d1-ejm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5V-Lb-AEU">
+                                                    <rect key="frame" x="275" y="22.666666666666671" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="58P-P9-agO"/>
+                                                        <constraint firstAttribute="width" constant="75" id="kiu-m7-mqB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-y5-RqE">
+                                                    <rect key="frame" x="25" y="16" width="240" height="88"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Repo Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ly2-82-2rt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="26.333333333333332"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-ed-B3d">
+                                                            <rect key="frame" x="0.0" y="26.333333333333336" width="240" height="19.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="description description desdescription description desdescription description des" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" enabled="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpe-ww-UOy">
+                                                            <rect key="frame" x="0.0" y="45.666666666666657" width="240" height="42.333333333333343"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="c5V-Lb-AEU" secondAttribute="trailing" constant="10" id="4re-7G-h99"/>
+                                                <constraint firstItem="NAa-y5-RqE" firstAttribute="leading" secondItem="Vtw-d1-ejm" secondAttribute="leadingMargin" constant="10" id="5r8-N5-khK"/>
+                                                <constraint firstItem="c5V-Lb-AEU" firstAttribute="centerY" secondItem="Vtw-d1-ejm" secondAttribute="centerY" id="MYw-6w-dwG"/>
+                                                <constraint firstItem="c5V-Lb-AEU" firstAttribute="leading" secondItem="NAa-y5-RqE" secondAttribute="trailing" constant="10" id="i0w-Ej-Egx"/>
+                                                <constraint firstItem="NAa-y5-RqE" firstAttribute="top" secondItem="Vtw-d1-ejm" secondAttribute="topMargin" constant="5" id="iLr-nA-nsF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NAa-y5-RqE" secondAttribute="bottom" constant="5" id="omi-v5-Sit"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="ImgViewAvatar" destination="c5V-Lb-AEU" id="CoX-8r-wad"/>
+                                            <outlet property="LblOwnerName" destination="Ly2-82-2rt" id="68h-2T-2wG"/>
+                                            <outlet property="LblRepoDesc" destination="mpe-ww-UOy" id="s6d-wd-qv5"/>
+                                            <outlet property="LblRepoName" destination="GwS-ed-B3d" id="Jev-6c-FNh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZcZ-ul-uZU" secondAttribute="bottom" id="CuO-Xd-LFB"/>
+                            <constraint firstItem="ZcZ-ul-uZU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ov9-KV-qM7"/>
+                            <constraint firstItem="ZcZ-ul-uZU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QeZ-Nd-9I6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZcZ-ul-uZU" secondAttribute="trailing" id="lJl-LK-EMV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Repositories" largeTitleDisplayMode="always" id="Big-4u-R57"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZcZ-ul-uZU" id="A9h-wJ-SPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="70.935960591133011"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rJ1-jd-bru">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u7M-1a-xSJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GMY-HJ-gvv">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="exn-N1-TYX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYR-eF-lco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="70.935960591133011"/>
+        </scene>
+    </scenes>
+</document>

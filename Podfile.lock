@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.9.1)
+  - lottie-ios (3.1.5)
+  - ProgressHUD (2.51)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - ProgressHUD
+  - SDWebImage (~> 5.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - lottie-ios
+    - ProgressHUD
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
+  ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 71cd5eb43bdd4614ab3968aa93bed01937c20df0
+
+COCOAPODS: 1.5.2

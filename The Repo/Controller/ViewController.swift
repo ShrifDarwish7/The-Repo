@@ -88,9 +88,7 @@ class ViewController: UIViewController {
         AlamofireRequest(page: 1, per_page: 10) { (Result) in
             self.Repos = Result
             self.page = 2
-            print("CountOFARRAFTER PRESSING THE NOTIFICATION \(self.Repos.count)")
             NotificationCenter.default.post(name: NSNotification.Name("ReloadNotification"), object: nil)
-            print("notificationpost")
         }
     }
 
@@ -176,6 +174,7 @@ class ViewController: UIViewController {
                 } catch {}
             case .failure(let error):
                 print("Failaure \(error.localizedDescription)")
+                 self.showAlert(title: "Faild", message: "Sorry Please Try Again Later")
                 }
             }
         ProgressHUD.dismiss()

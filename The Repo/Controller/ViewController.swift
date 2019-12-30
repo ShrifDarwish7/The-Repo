@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }
     
     ////////////// /////////////////////////////
-    ///////Mark : Setup The View
+    ///////Mark :- Setup The View
     
     
     func setupSearchBarAndLoading (){
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
     
     
     ////////////////////////////////////////////
-    /////Mark : notification Functions
+    /////Mark :- notification Functions
     
     override func viewDidAppear(_ animated: Bool) {
         self.tableView.reloadData()
@@ -93,7 +93,7 @@ class ViewController: UIViewController {
     }
 
     ////////////////////////////////////////////////////////
-    ///////////Mark : Pull to Refresh and infinete scrollingFunctions
+    ///////////Mark :- Pull to Refresh and infinete scrollingFunctions
     
     func addRefreshControl(){
         refreshControl = UIRefreshControl()

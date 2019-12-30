@@ -17,7 +17,7 @@ extension ViewController : UNUserNotificationCenterDelegate{
         content.title = "New Updates"
         content.body = "Check For New Repos"
         content.sound = UNNotificationSound.default
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600, repeats: true)
         let request = UNNotificationRequest.init(identifier: "content", content: content, trigger: trigger)
         center.add(request) { (error) in
             if error == nil{

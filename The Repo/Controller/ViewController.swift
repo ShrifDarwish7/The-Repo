@@ -113,9 +113,9 @@ class ViewController: UIViewController {
             self.refreshControl?.endRefreshing()
             self.page += 1
         }
-        DispatchQueue.main.async {
+        print(Repos.count)
             self.tableView.reloadData()
-        }
+        
     }
     ///////////
     @objc func loadMoreItems(){
@@ -222,6 +222,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepoCell", for: indexPath) as? RepoTableViewCell
         if filteredRepos.isEmpty == true{
+            print(Repos.count)
             let  NextRepo = self.Repos[indexPath.row]
             cell!.ConfigureCell(RepoName: NextRepo.name ?? "name", RepoDesc: NextRepo.repoDescription ?? "desc", OwnerName: (NextRepo.owner?.login).map { $0.rawValue } ?? "" , OwnerAvatar: (NextRepo.owner?.avatarURL)! )
             if NextRepo.fork == false || NextRepo.fork == nil {
